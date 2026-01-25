@@ -7,9 +7,12 @@ const Skills = () => {
       title: 'SOC Operations',
       skills: [
         'SOC Monitoring & Incident Detection',
-        'Incident Triage and Escalation',
+        'Alert Triage & Escalation (L1/L2)',
+        'Case Management & Documentation',
+        'Incident Reporting & RCA (Root Cause Analysis)',
         'Security Playbooks & Runbooks',
-        'Alert Investigation & Response',
+        'False Positive Reduction & Tuning',
+        'Severity Classification & Prioritization',
       ],
     },
     {
@@ -20,16 +23,22 @@ const Skills = () => {
         'MITRE ATT&CK Framework Mapping',
         'Kill Chain Analysis',
         'Behavioral Threat Detection',
+        'Threat Intelligence Correlation',
+        'Suspicious Activity Investigation',
+        'TTP Analysis & Adversary Simulation',
       ],
     },
     {
       icon: <Database className="w-8 h-8" />,
       title: 'SIEM & Log Analysis',
       skills: [
-        'SIEM Tools (Splunk, QRadar, Sentinel)',
-        'Log Analysis & Correlation',
-        'Event Correlation & Detection',
+        'SIEM Tools (Splunk, Wazuh, Sentinel)',
+        'Log Analysis & Event Correlation',
+        'Detection Rule Engineering',
         'Query Development (SPL, KQL)',
+        'Windows Event Logs (Security, Sysmon)',
+        'Linux Logs (Auth, Syslog)',
+        'Dashboards & Alerting Workflows',
       ],
     },
     {
@@ -37,39 +46,51 @@ const Skills = () => {
       title: 'Network Security',
       skills: [
         'Network Traffic Analysis (Wireshark)',
-        'TCP/IP, DNS, HTTP/HTTPS Protocols',
+        'TCP/IP, DNS, HTTP/HTTPS Fundamentals',
         'Packet Capture & Analysis',
         'Network Anomaly Detection',
+        'IDS/IPS Fundamentals (Suricata/Snort)',
+        'Basic Firewall & Proxy Concepts',
+        'VPN & Remote Access Security Basics',
       ],
     },
     {
       icon: <Cpu className="w-8 h-8" />,
       title: 'Endpoint Security',
       skills: [
-        'EDR Tools (Microsoft Defender)',
-        'CrowdStrike Falcon',
-        'Endpoint Forensics',
+        'Microsoft Defender (EDR Concepts)',
+        'CrowdStrike Falcon Basics',
+        'Endpoint Investigation & Containment',
+        'Process / Registry / Persistence Checks',
+        'Suspicious Execution Analysis',
         'Malware Analysis Basics',
+        'Host-Based IOC Validation',
       ],
     },
     {
       icon: <Bug className="w-8 h-8" />,
-      title: 'Web Application Security',
+      title: 'Web & Application Security',
       skills: [
         'OWASP Top 10 Testing',
-        'Vulnerability Assessment',
+        'Vulnerability Assessment & Validation',
         'Bug Bounty Methodologies',
-        'Security Code Review',
+        'Security Code Review (Basics)',
+        'IDOR & XSS Testing',
+        'API Security Testing (Auth, Rate Limits)',
+        'Session & Access Control Testing',
       ],
     },
     {
       icon: <Activity className="w-8 h-8" />,
-      title: 'Vulnerability Management',
+      title: 'Vulnerability & Risk Management',
       skills: [
         'Vulnerability Scanning',
         'Risk Assessment & Prioritization',
-        'Patch Management',
-        'Compliance Auditing',
+        'Patch Management Support',
+        'Compliance & Audit Readiness',
+        'Remediation Tracking & Reporting',
+        'Exposure Management Basics',
+        'Security Hardening Awareness',
       ],
     },
     {
@@ -79,7 +100,10 @@ const Skills = () => {
         'Python Scripting for Security',
         'Bash Automation',
         'API Integration',
-        'SOAR Platform Experience',
+        'SOAR Concepts (Playbooks)',
+        'Automating IOC Lookups',
+        'Log Parsing & Data Normalization',
+        'Basic Threat Intel Automation',
       ],
     },
   ];
@@ -92,7 +116,7 @@ const Skills = () => {
             Technical Skills
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Comprehensive expertise across multiple domains of cybersecurity
+            SOC and Security Analyst skills focused on detection, investigation, and response
           </p>
         </div>
 

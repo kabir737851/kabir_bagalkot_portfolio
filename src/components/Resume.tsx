@@ -2,8 +2,14 @@ import { Download, FileText, Briefcase, GraduationCap } from 'lucide-react';
 
 const Resume = () => {
   const handleDownload = () => {
-    alert('Update this with your actual resume PDF link');
+    const link = document.createElement("a");
+    link.href = "/Kabir_Bagalkot_Resume.pdf";
+    link.download = "Kabir_Bagalkot_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
+
 
   return (
     <section id="resume" className="py-20 bg-gray-50">
@@ -27,7 +33,7 @@ const Resume = () => {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-2xl font-bold text-gray-900">Professional Resume</h3>
-                    <p className="text-gray-600">Last updated: January 2024</p>
+                    <p className="text-gray-600">Last updated: January 2026</p>
                   </div>
                 </div>
 
@@ -37,7 +43,7 @@ const Resume = () => {
                     <div>
                       <h4 className="font-semibold text-gray-900">Experience Highlights</h4>
                       <p className="text-gray-600 text-sm">
-                        SOC operations, threat hunting, SIEM analysis, incident response
+                        SOC operations | Threat hunting | SIEM analysis | Incident response
                       </p>
                     </div>
                   </div>
@@ -47,7 +53,8 @@ const Resume = () => {
                     <div>
                       <h4 className="font-semibold text-gray-900">Education & Certifications</h4>
                       <p className="text-gray-600 text-sm">
-                        Security+, CSA, specialized training programs
+                        MBA (AI & ML) – D.Y. Patil College of Technology, Pune (2024 – Present)
+                        B.Com – Pune University (2017 – 2020)
                       </p>
                     </div>
                   </div>

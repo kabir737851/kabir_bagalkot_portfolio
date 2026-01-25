@@ -74,7 +74,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                    placeholder="john@example.com"
+                    placeholder="kabirbagalkot99@gmail.com"
                   />
                 </div>
 
@@ -149,7 +149,7 @@ const Contact = () => {
                       href="mailto:your.email@example.com"
                       className="text-blue-600 hover:text-blue-700 transition-colors"
                     >
-                      your.email@example.com
+                      kabirbagalkot99@gmail.com
                     </a>
                   </div>
                 </div>
@@ -164,7 +164,7 @@ const Contact = () => {
                       href="tel:+1234567890"
                       className="text-blue-600 hover:text-blue-700 transition-colors"
                     >
-                      +1 (234) 567-890
+                      +91 7666007228
                     </a>
                   </div>
                 </div>
@@ -175,7 +175,7 @@ const Contact = () => {
                   </div>
                   <div className="ml-4">
                     <h4 className="font-semibold text-gray-900 mb-1">Location</h4>
-                    <p className="text-gray-700">City, State, Country</p>
+                    <p className="text-gray-700">Pune, Maharashtra, India</p>
                     <p className="text-sm text-gray-600">(Open to remote opportunities)</p>
                   </div>
                 </div>
@@ -195,7 +195,7 @@ const Contact = () => {
                   </a>
 
                   <a
-                    href="https://github.com/kabir737851/SOC-Home-Lab"
+                    href="https://github.com/kabir737851"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 bg-white hover:bg-gray-50 text-gray-900 px-4 py-3 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-md"

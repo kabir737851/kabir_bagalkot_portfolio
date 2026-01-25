@@ -15,10 +15,9 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">CyberSec Portfolio</h3>
+            <h3 className="text-xl font-bold mb-4">Kabir Bagalkot Portfolio</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Passionate cybersecurity professional specializing in SOC operations,
-              threat hunting, and incident response.
+              Aspiring SOC Analyst / Security Analyst interested in SOC operations, threat hunting, and incident response.
             </p>
           </div>
 
@@ -94,7 +93,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Connect</h4>
             <div className="flex gap-4">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/kabir737851"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gray-800 hover:bg-gray-700 p-3 rounded-lg transition-all transform hover:scale-110"
@@ -103,7 +102,7 @@ const Footer = () => {
                 <Github size={20} />
               </a>
               <a
-                href="https://linkedin.com/in/yourprofile"
+                href="https://www.linkedin.com/in/kabir-bagalkot-35a3181a8/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gray-800 hover:bg-gray-700 p-3 rounded-lg transition-all transform hover:scale-110"
@@ -112,7 +111,7 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:kabirbagalkot99@gmail.com"
                 className="bg-gray-800 hover:bg-gray-700 p-3 rounded-lg transition-all transform hover:scale-110"
                 aria-label="Email"
               >
@@ -125,10 +124,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
             <p>
-              © {currentYear} Your Name. All rights reserved.
-            </p>
-            <p className="flex items-center mt-2 md:mt-0">
-              Built with <Heart size={14} className="mx-1 text-red-500" /> using React & TypeScript
+              © {currentYear} Kabir Bagalkot. All rights reserved.
             </p>
           </div>
         </div>
