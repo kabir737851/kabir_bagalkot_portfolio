@@ -19,10 +19,10 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-slide-up">
-              Your Name
+              Kabir Bagalkot
             </h1>
             <h2 className="text-2xl md:text-3xl text-blue-300 mb-6 animate-slide-up animation-delay-100">
-              Cybersecurity Analyst | SOC Specialist
+              Cybersecurity Analyst | Aspiring SOC Analyst
             </h2>
             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed animate-slide-up animation-delay-200">
               Specialized in SOC monitoring, incident detection, threat hunting, SIEM investigations,
@@ -46,7 +46,7 @@ const Hero = () => {
                 Download Resume
               </button>
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/kabir737851"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 border-2 border-white hover:bg-white hover:text-blue-900 text-white px-6 py-3 rounded-lg font-semibold transition-all transform hover:scale-105"

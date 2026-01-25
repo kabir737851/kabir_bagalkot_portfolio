@@ -185,7 +185,7 @@ const Contact = () => {
                 <h4 className="font-semibold text-gray-900 mb-4">Connect With Me</h4>
                 <div className="space-y-3">
                   <a
-                    href="https://linkedin.com/in/yourprofile"
+                    href="https://www.linkedin.com/in/kabir-bagalkot-35a3181a8/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 bg-white hover:bg-gray-50 text-gray-900 px-4 py-3 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-md"
@@ -195,7 +195,7 @@ const Contact = () => {
                   </a>
 
                   <a
-                    href="https://github.com/yourusername"
+                    href="https://github.com/kabir737851/SOC-Home-Lab"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 bg-white hover:bg-gray-50 text-gray-900 px-4 py-3 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-md"
@@ -205,7 +205,7 @@ const Contact = () => {
                   </a>
 
                   <a
-                    href="mailto:your.email@example.com"
+                    href="mailto:kabirbagalkot99@gmail.com"
                     className="flex items-center gap-3 bg-white hover:bg-gray-50 text-gray-900 px-4 py-3 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-md"
                   >
                     <Mail className="w-5 h-5 text-red-600" />

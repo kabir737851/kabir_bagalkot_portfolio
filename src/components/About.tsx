@@ -18,21 +18,18 @@ const About = () => {
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Who I Am</h3>
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
               <p>
-                I'm a passionate cybersecurity professional with a strong focus on Security Operations Center (SOC)
-                activities, threat detection, and incident response. My journey into cybersecurity began with a
-                fascination for understanding how systems can be protected against evolving cyber threats.
+               Hi, I’m <strong>Kabir Bagalkot</strong>, an aspiring <strong>SOC Analyst / Security Analyst</strong> passionate about
+               <strong>detecting threats</strong>, <strong>analyzing logs</strong>, and <strong>responding to incidents</strong> in real-world environments.
+               Through my <strong>SOC Home Lab</strong>, I’ve gained practical experience with
+               <strong>Splunk</strong>, <strong>Wazuh</strong>, and <strong>MITRE ATT&CK</strong>, building the skills needed for effective
+               <strong>monitoring</strong>, <strong>investigation</strong>, and <strong>incident response</strong>.
               </p>
               <p>
-                Through hands-on experience in SOC monitoring, SIEM analysis, and threat hunting, I've developed
-                a comprehensive skill set that enables me to identify, investigate, and respond to security incidents
-                effectively. I believe in continuous learning and staying updated with the latest threat landscape,
-                attack techniques, and defensive strategies.
-              </p>
-              <p>
-                My approach combines technical expertise with analytical thinking, allowing me to not just detect
-                threats but also understand the adversary's tactics, techniques, and procedures (TTPs) using
-                frameworks like MITRE ATT&CK. I'm committed to contributing to a safer digital environment through
-                proactive security measures and rapid incident response.
+               With <strong>2+ years of secure full-stack development experience</strong>, I bring an <strong>engineering mindset</strong> to cybersecurity—
+               helping me <strong>identify risks quickly</strong> and <strong>collaborate with teams</strong> to remediate vulnerabilities efficiently.
+               I’ve discovered <strong>20+ vulnerabilities</strong>, including <strong>IDOR</strong>, <strong>XSS</strong>, and
+               <strong>AI prompt injection</strong>, and I’m driven to turn security findings into
+               <strong>meaningful improvements</strong>.
               </p>
             </div>
           </div>
@@ -62,10 +59,6 @@ const About = () => {
                   <span className="text-blue-500 mr-2">•</span>
                   Security automation with SOAR platforms
                 </li>
-                <li className="flex items-start">
-                  <span className="text-blue-500 mr-2">•</span>
-                  Kubernetes security
-                </li>
               </ul>
             </div>
 
@@ -92,10 +85,6 @@ const About = () => {
                 <li className="flex items-start">
                   <span className="text-green-500 mr-2">•</span>
                   Security Engineer
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-2">•</span>
-                  Penetration Tester
                 </li>
               </ul>
             </div>

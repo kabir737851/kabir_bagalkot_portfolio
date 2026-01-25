@@ -16,100 +16,16 @@ const Projects = () => {
 
   const projects: Project[] = [
     {
-      name: 'SIEM Dashboard & Alert Automation',
-      description: 'Built a custom SIEM dashboard to correlate security events and automate alert triage using Splunk and Python.',
+      name: 'SOC Analyst Home Lab',
+      description: 'Built a VMware-based SOC home lab with Kali Linux and Metasploitable 3, integrated Splunk and Wazuh for log collection, alerting, and incident investigation.',
       category: 'SOC/SIEM',
-      tools: ['Splunk', 'Python', 'REST API', 'SPL'],
+      tools: ['VMware', 'Kali Linux', 'Metasploitable 3', 'Splunk', 'Wazuh', 'Wireshark', 'MITRE ATT&CK'],
       highlights: [
-        'Reduced false positives by 40%',
-        'Automated alert enrichment',
-        'Real-time threat correlation',
+        'Simulated real attack scenarios mapped to MITRE ATT&CK',
+        'Centralized log collection and alert investigation',
+        'Network traffic analysis using Wireshark',
       ],
-      githubUrl: 'https://github.com/yourusername/siem-dashboard',
-    },
-    {
-      name: 'Threat Hunting Framework',
-      description: 'Developed a threat hunting framework using MITRE ATT&CK to proactively identify IOCs and suspicious behaviors.',
-      category: 'Threat Hunting',
-      tools: ['Python', 'MITRE ATT&CK', 'Sigma Rules', 'ElasticSearch'],
-      highlights: [
-        'Mapped 50+ attack techniques',
-        'Created custom detection rules',
-        'Integrated IOC feeds',
-      ],
-      githubUrl: 'https://github.com/yourusername/threat-hunting',
-    },
-    {
-      name: 'Web Vulnerability Scanner',
-      description: 'Created an automated web vulnerability scanner based on OWASP Top 10 for bug bounty reconnaissance.',
-      category: 'Web Security',
-      tools: ['Python', 'Burp Suite', 'OWASP ZAP', 'BeautifulSoup'],
-      highlights: [
-        'Scans for XSS, SQLi, CSRF',
-        'Generates detailed reports',
-        'Supports bulk scanning',
-      ],
-      githubUrl: 'https://github.com/yourusername/vuln-scanner',
-    },
-    {
-      name: 'Incident Response Playbooks',
-      description: 'Comprehensive incident response playbooks covering ransomware, phishing, and data breach scenarios.',
-      category: 'SOC/SIEM',
-      tools: ['NIST Framework', 'MITRE ATT&CK', 'Markdown', 'Documentation'],
-      highlights: [
-        'Step-by-step response procedures',
-        'Includes containment strategies',
-        'Aligned with industry standards',
-      ],
-      githubUrl: 'https://github.com/yourusername/ir-playbooks',
-    },
-    {
-      name: 'Log Analysis Toolkit',
-      description: 'Python toolkit for parsing and analyzing security logs from multiple sources including Windows Event Logs and Syslog.',
-      category: 'Automation',
-      tools: ['Python', 'Pandas', 'Regex', 'JSON'],
-      highlights: [
-        'Multi-format log parsing',
-        'Automated anomaly detection',
-        'Export to SIEM formats',
-      ],
-      githubUrl: 'https://github.com/yourusername/log-toolkit',
-    },
-    {
-      name: 'Network Traffic Analyzer',
-      description: 'Built a network traffic analysis tool using Wireshark and Python to detect malicious patterns and anomalies.',
-      category: 'Threat Hunting',
-      tools: ['Python', 'Scapy', 'Wireshark', 'NetworkX'],
-      highlights: [
-        'Real-time packet inspection',
-        'Protocol analysis',
-        'Malicious traffic detection',
-      ],
-      githubUrl: 'https://github.com/yourusername/traffic-analyzer',
-    },
-    {
-      name: 'Security Automation Scripts',
-      description: 'Collection of Python and Bash scripts for automating common security tasks and workflows.',
-      category: 'Automation',
-      tools: ['Python', 'Bash', 'APIs', 'Cron'],
-      highlights: [
-        'Automated vulnerability scanning',
-        'Report generation',
-        'Integration with ticketing systems',
-      ],
-      githubUrl: 'https://github.com/yourusername/sec-automation',
-    },
-    {
-      name: 'OWASP Top 10 Lab Environment',
-      description: 'Created a vulnerable web application lab for practicing OWASP Top 10 exploitation techniques.',
-      category: 'Web Security',
-      tools: ['Docker', 'PHP', 'MySQL', 'DVWA'],
-      highlights: [
-        'Hands-on vulnerability practice',
-        'Dockerized environment',
-        'Training documentation included',
-      ],
-      githubUrl: 'https://github.com/yourusername/owasp-lab',
+      githubUrl: 'https://github.com/kabir737851/SOC-Home-Lab',
     },
   ];
 
