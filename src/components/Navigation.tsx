@@ -47,7 +47,7 @@ const Navigation = () => {
               isScrolled ? 'text-gray-900' : 'text-white'
             }`}
           >
-            CyberSec Portfolio
+            Kabir Bagalkot Portfolio
           </button>
 
           <div className="hidden md:flex items-center space-x-8">

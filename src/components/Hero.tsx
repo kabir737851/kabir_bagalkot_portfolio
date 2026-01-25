@@ -25,7 +25,7 @@ const Hero = () => {
               Cybersecurity Analyst | Aspiring SOC Analyst
             </h2>
             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed animate-slide-up animation-delay-200">
-              Entry-level SOC Analyst / Security Analyst specializing in SOC monitoring, SIEM alert investigation, incident detection, and 
+              Entry level SOC Analyst / Security Analyst specializing in SOC monitoring, SIEM alert investigation, incident detection, and 
               threat hunting, with a strong foundation in log analysis, MITRE ATT&CK, and incident response workflows.
             </p>
 
