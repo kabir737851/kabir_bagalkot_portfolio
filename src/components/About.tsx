@@ -47,19 +47,7 @@ const About = () => {
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start">
                   <span className="text-blue-500 mr-2">•</span>
-                  SIEM detection engineering & correlation rules
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-500 mr-2">•</span>
-                  Alert triage workflows & incident documentation
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-500 mr-2">•</span>
                   Endpoint telemetry (Windows Event Logs, Sysmon)
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-500 mr-2">•</span>
-                  Threat intelligence & IOC enrichment techniques
                 </li>
               </ul>
             </div>
