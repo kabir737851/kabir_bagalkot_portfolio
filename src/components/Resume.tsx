@@ -3,7 +3,7 @@ import { Download, FileText, Briefcase, GraduationCap } from 'lucide-react';
 const Resume = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Kabir_Bagalkot_Resume.pdf";
+    link.href = `${import.meta.env.BASE_URL}Kabir_Bagalkot_Resume.pdf`;
     link.download = "Kabir_Bagalkot_Resume.pdf";
     document.body.appendChild(link);
     link.click();

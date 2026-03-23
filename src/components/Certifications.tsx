@@ -142,6 +142,7 @@ const Certifications = () => {
   );
 };
 
+
 const TrendingUp = ({ className }: { className?: string }) => (
   <svg
     className={className}
