@@ -1,10 +1,11 @@
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
+
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -14,15 +15,22 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          {/* About */}
           <div>
             <h3 className="text-xl font-bold mb-4">Kabir Bagalkot Portfolio</h3>
+
             <p className="text-gray-400 text-sm leading-relaxed">
-              Aspiring SOC Analyst / Security Analyst interested in SOC operations, threat hunting, and incident response.
+              Aspiring SOC Analyst with hands-on experience in SOC operations,
+              threat hunting, incident response, and IT Risk & Controls (ITGC),
+              with a strong interest in security monitoring, compliance, and
+              continuous improvement.
             </p>
           </div>
 
+          {/* Quick Links */}
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
+
             <ul className="space-y-2">
               <li>
                 <button
@@ -32,6 +40,7 @@ const Footer = () => {
                   Home
                 </button>
               </li>
+
               <li>
                 <button
                   onClick={() => scrollToSection('skills')}
@@ -40,6 +49,7 @@ const Footer = () => {
                   Skills
                 </button>
               </li>
+
               <li>
                 <button
                   onClick={() => scrollToSection('projects')}
@@ -48,6 +58,7 @@ const Footer = () => {
                   Projects
                 </button>
               </li>
+
               <li>
                 <button
                   onClick={() => scrollToSection('about')}
@@ -59,8 +70,10 @@ const Footer = () => {
             </ul>
           </div>
 
+          {/* Resources */}
           <div>
             <h4 className="font-semibold mb-4">Resources</h4>
+
             <ul className="space-y-2">
               <li>
                 <button
@@ -70,6 +83,7 @@ const Footer = () => {
                   Certifications
                 </button>
               </li>
+
               <li>
                 <button
                   onClick={() => scrollToSection('resume')}
@@ -78,6 +92,7 @@ const Footer = () => {
                   Resume
                 </button>
               </li>
+
               <li>
                 <button
                   onClick={() => scrollToSection('contact')}
@@ -89,8 +104,10 @@ const Footer = () => {
             </ul>
           </div>
 
+          {/* Social Links */}
           <div>
             <h4 className="font-semibold mb-4">Connect</h4>
+
             <div className="flex gap-4">
               <a
                 href="https://github.com/kabir737851"
@@ -101,6 +118,7 @@ const Footer = () => {
               >
                 <Github size={20} />
               </a>
+
               <a
                 href="https://www.linkedin.com/in/kabir-bagalkot-35a3181a8/"
                 target="_blank"
@@ -110,6 +128,7 @@ const Footer = () => {
               >
                 <Linkedin size={20} />
               </a>
+
               <a
                 href="mailto:kabirbagalkot99@gmail.com"
                 className="bg-gray-800 hover:bg-gray-700 p-3 rounded-lg transition-all transform hover:scale-110"
@@ -123,9 +142,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-            <p>
-              © {currentYear} Kabir Bagalkot. All rights reserved.
-            </p>
+            <p>© {currentYear} Kabir Bagalkot. All rights reserved.</p>
           </div>
         </div>
       </div>
