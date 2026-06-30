@@ -21,12 +21,17 @@ const Hero = () => {
             <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-slide-up">
               Kabir Bagalkot
             </h1>
+
             <h2 className="text-2xl md:text-3xl text-blue-300 mb-6 animate-slide-up animation-delay-100">
-              Cybersecurity Analyst | Aspiring SOC Analyst
+              SOC Analyst | IT Risk & Controls
             </h2>
+
             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed animate-slide-up animation-delay-200">
-              Entry level SOC Analyst / Security Analyst specializing in SOC monitoring, SIEM alert investigation, incident detection, and 
-              threat hunting, with a strong foundation in log analysis, MITRE ATT&CK, and incident response workflows.
+              Entry-level SOC Analyst with hands-on experience in SOC monitoring,
+              SIEM alert investigation, incident detection, and threat hunting,
+              plus practical exposure to IT General Controls (ITGC), access
+              control review, and compliance documentation gained through
+              enterprise application and regulatory compliance work.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center animate-slide-up animation-delay-300">
@@ -37,6 +42,7 @@ const Hero = () => {
                 <FolderKanban size={20} />
                 View Projects
               </button>
+
               <button
                 onClick={() => scrollToSection('resume')}
                 className="flex items-center gap-2 bg-white hover:bg-gray-100 text-blue-900 px-6 py-3 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg"
@@ -44,6 +50,7 @@ const Hero = () => {
                 <Download size={20} />
                 Download Resume
               </button>
+
               <a
                 href="https://github.com/kabir737851"
                 target="_blank"
@@ -53,6 +60,7 @@ const Hero = () => {
                 <Github size={20} />
                 GitHub
               </a>
+
               <button
                 onClick={() => scrollToSection('contact')}
                 className="flex items-center gap-2 border-2 border-white hover:bg-white hover:text-blue-900 text-white px-6 py-3 rounded-lg font-semibold transition-all transform hover:scale-105"
