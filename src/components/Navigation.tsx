@@ -9,12 +9,15 @@ const Navigation = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
+
     window.addEventListener('scroll', handleScroll);
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
+
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
       setIsMobileMenuOpen(false);
@@ -43,11 +46,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           <button
             onClick={() => scrollToSection('home')}
-            className={`text-xl font-bold transition-colors ${
+            className={`text-xl md:text-2xl font-bold tracking-wide transition-colors ${
               isScrolled ? 'text-gray-900' : 'text-white'
             }`}
           >
-            Kabir Bagalkot Portfolio
+            Kabir Bagalkot
           </button>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -55,7 +58,7 @@ const Navigation = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`transition-colors hover:text-blue-600 ${
+                className={`font-medium transition-colors hover:text-blue-600 ${
                   isScrolled ? 'text-gray-700' : 'text-white'
                 }`}
               >
@@ -66,7 +69,9 @@ const Navigation = () => {
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`md:hidden ${isScrolled ? 'text-gray-900' : 'text-white'}`}
+            className={`md:hidden ${
+              isScrolled ? 'text-gray-900' : 'text-white'
+            }`}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>

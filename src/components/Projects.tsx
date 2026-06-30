@@ -17,19 +17,59 @@ const Projects = () => {
   const projects: Project[] = [
     {
       name: 'SOC Analyst Home Lab',
-      description: 'Built a VMware-based SOC home lab with Kali Linux and Metasploitable 3, integrated Splunk and Wazuh for log collection, alerting, and incident investigation.',
+      description:
+        'Built a VMware-based SOC home lab with Kali Linux and Metasploitable 3, integrating Splunk and Wazuh for centralized log collection, security monitoring, alert investigation, and incident response practice.',
       category: 'SOC/SIEM',
-      tools: ['VMware', 'Kali Linux', 'Metasploitable 3', 'Splunk', 'Wazuh', 'Wireshark', 'MITRE ATT&CK'],
+      tools: [
+        'VMware',
+        'Kali Linux',
+        'Metasploitable 3',
+        'Splunk',
+        'Wazuh',
+        'Wireshark',
+        'MITRE ATT&CK',
+      ],
       highlights: [
-        'Simulated real attack scenarios mapped to MITRE ATT&CK',
-        'Centralized log collection and alert investigation',
-        'Network traffic analysis using Wireshark',
+        'Simulated real-world attack scenarios mapped to MITRE ATT&CK.',
+        'Centralized log collection and SIEM alert investigation.',
+        'Performed endpoint and network traffic analysis using Wireshark.',
       ],
       githubUrl: 'https://github.com/kabir737851/SOC-Home-Lab',
     },
+
+    {
+      name: 'Enterprise Security & ITGC Implementation',
+      description:
+        'Implemented secure enterprise application features focusing on access control, regulatory compliance, and IT General Controls (ITGC) while supporting production business applications.',
+      category: 'IT Risk & Controls',
+      tools: [
+        'JWT',
+        'RBAC',
+        'ASP.NET Core',
+        'SQL Server',
+        'ZATCA Phase 2',
+        'ITGC',
+        'Access Management',
+      ],
+      highlights: [
+        'Implemented JWT authentication and Role-Based Access Control (RBAC).',
+        'Supported ZATCA Phase 2 regulatory compliance implementation.',
+        'Contributed to access management review and Segregation of Duties (SoD).',
+        'Participated in change management and compliance documentation.',
+        'Applied secure development practices within enterprise applications.',
+      ],
+      githubUrl: 'https://github.com/kabir737851',
+    },
   ];
 
-  const categories = ['All', 'SOC/SIEM', 'Web Security', 'Threat Hunting', 'Automation'];
+  const categories = [
+    'All',
+    'SOC/SIEM',
+    'IT Risk & Controls',
+    'Web Security',
+    'Threat Hunting',
+    'Automation',
+  ];
 
   const filteredProjects =
     activeFilter === 'All'
@@ -43,8 +83,11 @@ const Projects = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Projects & Portfolio
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Practical implementations and hands-on security projects
+
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Hands-on SOC, enterprise security, and IT Risk & Controls projects
+            demonstrating practical experience in security monitoring,
+            compliance, and secure application development.
           </p>
         </div>
 
@@ -64,7 +107,7 @@ const Projects = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {filteredProjects.map((project, index) => (
             <div
               key={index}
@@ -75,6 +118,7 @@ const Projects = () => {
                   <h3 className="text-xl font-bold text-gray-900 flex-1">
                     {project.name}
                   </h3>
+
                   <span className="text-xs bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-semibold">
                     {project.category}
                   </span>
@@ -85,7 +129,10 @@ const Projects = () => {
                 </p>
 
                 <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-gray-700 mb-2">Tools Used:</h4>
+                  <h4 className="text-sm font-semibold text-gray-700 mb-2">
+                    Tools & Technologies
+                  </h4>
+
                   <div className="flex flex-wrap gap-2">
                     {project.tools.map((tool, toolIndex) => (
                       <span
@@ -99,10 +146,16 @@ const Projects = () => {
                 </div>
 
                 <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-gray-700 mb-2">Key Highlights:</h4>
-                  <ul className="space-y-1">
+                  <h4 className="text-sm font-semibold text-gray-700 mb-2">
+                    Key Highlights
+                  </h4>
+
+                  <ul className="space-y-2">
                     {project.highlights.map((highlight, highlightIndex) => (
-                      <li key={highlightIndex} className="text-sm text-gray-600 flex items-start">
+                      <li
+                        key={highlightIndex}
+                        className="text-sm text-gray-600 flex items-start"
+                      >
                         <span className="text-blue-500 mr-2">✓</span>
                         {highlight}
                       </li>
@@ -120,6 +173,7 @@ const Projects = () => {
                     <Github size={18} />
                     View Code
                   </a>
+
                   {project.liveUrl && (
                     <a
                       href={project.liveUrl}

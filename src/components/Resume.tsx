@@ -2,14 +2,13 @@ import { Download, FileText, Briefcase, GraduationCap } from 'lucide-react';
 
 const Resume = () => {
   const handleDownload = () => {
-    const link = document.createElement("a");
+    const link = document.createElement('a');
     link.href = `${import.meta.env.BASE_URL}Kabir_Bagalkot_Resume.pdf`;
-    link.download = "Kabir_Bagalkot_Resume.pdf";
+    link.download = 'Kabir_Bagalkot_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
-
 
   return (
     <section id="resume" className="py-20 bg-gray-50">
@@ -18,8 +17,11 @@ const Resume = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Resume
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Download my complete professional resume
+
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Download my complete resume highlighting experience in SOC
+            operations, SIEM monitoring, IT Risk & Controls (ITGC), secure
+            application development, and enterprise cybersecurity.
           </p>
         </div>
 
@@ -31,30 +33,48 @@ const Resume = () => {
                   <div className="bg-blue-100 p-4 rounded-full">
                     <FileText className="w-8 h-8 text-blue-600" />
                   </div>
+
                   <div className="ml-4">
-                    <h3 className="text-2xl font-bold text-gray-900">Professional Resume</h3>
-                    <p className="text-gray-600">Last updated: January 2026</p>
+                    <h3 className="text-2xl font-bold text-gray-900">
+                      Professional Resume
+                    </h3>
+
+                    <p className="text-gray-600">
+                      Last updated: January 2026
+                    </p>
                   </div>
                 </div>
 
                 <div className="space-y-4 mb-6">
                   <div className="flex items-start">
                     <Briefcase className="w-5 h-5 text-blue-600 mr-3 mt-1" />
+
                     <div>
-                      <h4 className="font-semibold text-gray-900">Experience Highlights</h4>
+                      <h4 className="font-semibold text-gray-900">
+                        Experience Highlights
+                      </h4>
+
                       <p className="text-gray-600 text-sm">
-                        SOC operations | Threat hunting | SIEM analysis | Incident response
+                        SOC Operations | SIEM Analysis | Incident Response |
+                        IT General Controls (ITGC) | Access Management |
+                        Compliance Documentation
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start">
                     <GraduationCap className="w-5 h-5 text-blue-600 mr-3 mt-1" />
+
                     <div>
-                      <h4 className="font-semibold text-gray-900">Education & Certifications</h4>
+                      <h4 className="font-semibold text-gray-900">
+                        Education & Certifications
+                      </h4>
+
                       <p className="text-gray-600 text-sm">
-                        MBA (AI & ML) – D.Y. Patil College of Technology, Pune (2024 – Present)
-                        B.Com – Pune University (2017 – 2020)
+                        MBA (AI & ML) – D.Y. Patil College of Technology, Pune
+                        (2024 – Present)
+                        <br />
+                        B.Com – Savitribai Phule Pune University (2017 – 2020)
                       </p>
                     </div>
                   </div>
@@ -69,7 +89,7 @@ const Resume = () => {
                 </button>
 
                 <p className="text-sm text-gray-500 mt-4">
-                  File size: ~250KB | Format: PDF
+                  File size: ~250 KB | Format: PDF
                 </p>
               </div>
 
@@ -78,6 +98,7 @@ const Resume = () => {
                   <div className="bg-white rounded-lg shadow-md p-6 w-48 h-64 flex items-center justify-center">
                     <div className="text-center">
                       <FileText className="w-16 h-16 text-blue-600 mx-auto mb-3" />
+
                       <div className="space-y-2">
                         <div className="h-2 bg-gray-200 rounded"></div>
                         <div className="h-2 bg-gray-200 rounded w-3/4 mx-auto"></div>
@@ -93,31 +114,39 @@ const Resume = () => {
             </div>
 
             <div className="mt-8 pt-8 border-t border-gray-200">
-              <h4 className="font-semibold text-gray-900 mb-3">What's Included:</h4>
+              <h4 className="font-semibold text-gray-900 mb-3">
+                What's Included:
+              </h4>
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div className="flex items-center text-gray-700">
                   <span className="text-green-500 mr-2">✓</span>
                   Professional summary
                 </div>
+
                 <div className="flex items-center text-gray-700">
                   <span className="text-green-500 mr-2">✓</span>
-                  Work experience
+                  Enterprise & SOC work experience
                 </div>
+
                 <div className="flex items-center text-gray-700">
                   <span className="text-green-500 mr-2">✓</span>
-                  Technical skills
+                  SOC, SIEM & IT Risk (ITGC) skills
                 </div>
+
                 <div className="flex items-center text-gray-700">
                   <span className="text-green-500 mr-2">✓</span>
-                  Education & certifications
+                  Education & professional certifications
                 </div>
+
                 <div className="flex items-center text-gray-700">
                   <span className="text-green-500 mr-2">✓</span>
-                  Key projects
+                  Security research & enterprise projects
                 </div>
+
                 <div className="flex items-center text-gray-700">
                   <span className="text-green-500 mr-2">✓</span>
-                  Contact information
+                  Contact information & professional links
                 </div>
               </div>
             </div>
